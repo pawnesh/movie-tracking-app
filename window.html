@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <link rel="stylesheet" href="assets/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <style>
+            @import url('assets/font/Roboto-Regular.ttf');
+            @import url('assets/font/Roboto-Bold.ttf');
+            html, body {
+                overflow-y:auto;
+                font-family: 'Roboto', sans-serif;
+            }
+            body{
+                padding: 0px 10px;
+                background: #191919;
+                color: #e1e1e1;
+            }
+            a{
+                color: #c959fe;
+                text-decoration: none;
+            }
+            nav{
+                padding: 5px;
+                color: #c959fe;
+            }
+            nav a{
+                margin: 0 3px;
+                padding: 5px 10px;
+                text-transform: uppercase;
+            }
+            .box{
+                background: #232323;
+                color: #e0e0e0;
+                padding: 15px;
+            }
+
+            .input{
+                background: #232323;
+                color: #e0e0e0;
+                border-radius: none;
+                border: 1px solid #232323;
+                padding: 10px;
+                width: 100%;
+                margin-top: 10px;
+            }
+
+            header{
+                
+            }
+            header input{
+                
+            }
+            #movies-list{
+                list-style: none;
+                padding: 0;
+            }
+            #movies-list li{
+                list-style: none;
+                padding: 5px;
+                clear:both;
+                margin: 32px 5px;
+            }
+            #movies-list li img{
+                width: 40%;
+                display:inline-block;
+            }
+            #movies-list li .desc{
+                display:flex;
+                flex-direction: column;
+                width: 60%;
+                float: right;
+                padding: 12px;
+                color: #a3a3a3;
+            }
+            #movies-list li .desc h3{
+                color: #e1e1e1;
+            }
+
+            .toast-messages{
+                position: fixed;
+                bottom: 10px;
+                background: #232323;
+                color:rgba(224, 224, 224, 0.8);
+                padding: 5px;
+                border-radius: 5px;
+                z-index: 10;
+                width: 95%;
+                text-align: center;
+            }
+            #movies-list .footer{
+                width: 100%;
+                clear: both;
+                display: flex;
+                flex-direction: row-reverse;
+                margin-top: -38px;
+                margin-left: -49px;
+                position: absolute;
+            }
+            #movies-list button{
+                background: url('img/movie-128.png');
+                padding: 13px;
+                background-repeat: no-repeat;
+                background-size: contain;
+                border: 0;
+                cursor: pointer;
+            }
+            #movies-list button.unwatch{
+                opacity: 0.5;
+            }
+            .desc .tags{
+                height:20px;
+            }
+        </style>
+  </head>
+  <body>
+    <header>
+        <input type="text" class="input" id="search-input" placeholder="Search...">
+        <nav>
+        </nav>
+    </header>
+    <section class="list">
+        <ul id="movies-list">
+
+        </ul>
+    </section>
+    <script src="library.js"></script>
+    <script src="movie.js"></script>
+    <script src="movies.js"></script>
+    <script src="system.js"></script>
+  </body>
+</html>
